@@ -1,0 +1,53 @@
+.dashboard-ctn {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  box-sizing: content-box;
+  background-color: #f5f5f5;
+}
+
+.jumbotron-ctn {
+  background-image: url('../images/pngs/jumbotron-img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+}
+
+.laptop-pic-ctn {
+  margin-left: 8%;
+  height: 70vh;
+  width: 40vw;
+  border-radius: 50%;
+  background-image: url('../images/pngs/studio-laptop.jpg');
+  background-position: center;
+  animation: zoom 2s forwards;
+}
+
+.hero-text-ctn {
+  margin-right: auto;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(0) rotate(0deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
+}
