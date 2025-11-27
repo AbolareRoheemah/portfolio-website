@@ -115,7 +115,7 @@ export default function Blogs() {
                     <p className='text-base text-[#8b9093] mb-8' data-aos="fade-up" data-aos-delay="10">ERC-20 (Ethereum Request for Comments-20) is the name used in the Ethereum community to refer to a standard (set of rules and functions) that guides the creation of fungible tokens on the Ethereum blockchain. Fungible tokens are tokens that are identical and can be exchanged on a one-for-one basis. In this article, I will go through the different functions contained in an ERc20 token standard and how they are used...</p>
                     <div className='flex items-center justify-start cursor-pointer' data-aos="fade-up" data-aos-delay="20">
                         <Link href="https://rhorheeymarh.hashnode.dev/unpacking-erc-20-tokens-understanding-their-functions-and-their-uses"><p className='text-medium text-[#6AECD9] border-b-2 border-[#696E71]'>Read More</p></Link>
-                        <Image src="/readmore.svg" alt="Arrow icon" width={24} height={16} />
+                        <Image src="/readmore.svg" alt="Arrow icon" width={20} height={16} />
                     </div>
                 </div>
             </div>
@@ -128,7 +128,7 @@ export default function Blogs() {
                     <p className='text-base text-[#8b9093] mb-8' data-aos="fade-up" data-aos-delay="10">The birth of the Ethereum blockchain saw a significant change in the way we see and interact with blockchain technology. Ethereum extended to a large extent the capabilities of the first blockchain (Bitcoin), which was primarily created to facilitate peer-to-peer transactions of digital currencies.</p>
                     <div className='flex items-center justify-start cursor-pointer' data-aos="fade-up" data-aos-delay="20">
                         <Link href="https://rhorheeymarh.hashnode.dev/navigating-ether-transfers-in-solidity-send-transfer-and-call-explained"><p className='text-medium text-[#6AECD9] border-b-2 border-[#696E71]'>Read More</p></Link>
-                        <Image src="/readmore.svg" alt="Arrow icon" width={24} height={16} />
+                        <Image src="/readmore.svg" alt="Arrow icon" width={20} height={16} />
                     </div>
                 </div>
             </div>
@@ -141,7 +141,7 @@ export default function Blogs() {
                     <p className='text-base text-[#8b9093] mb-8' data-aos="fade-up" data-aos-delay="10">A merkle tree, also known as a hash tree, is a kind of data structure used to store data more efficiently and securely. It was named after Ralph Merkle, a computer scientist known for his pioneering work in the field of cryptography.</p>
                     <div className='flex items-center justify-start cursor-pointer' data-aos="fade-up" data-aos-delay="20">
                         <Link href="https://rhorheeymarh.hashnode.dev/efficient-data-management-and-verification-with-merkle-trees"><p className='text-medium text-[#6AECD9] border-b-2 border-[#696E71]'>Read More</p></Link>
-                        <Image src="/readmore.svg" alt="Arrow icon" width={24} height={16} />
+                        <Image src="/readmore.svg" alt="Arrow icon" width={20} height={16} />
                     </div>
                 </div>
             </div>
@@ -154,7 +154,7 @@ export default function Blogs() {
                     <p className='text-base text-[#8b9093] mb-8' data-aos="fade-up" data-aos-delay="10">In this article, I examined how arrays, structs and mappings are stored on the EVM, but before we dive into this, lets talk about what storage looks like in the EVM. Understanding how EVM storage works is crucial for efficient smart contract development.</p>
                     <div className='flex items-center justify-start cursor-pointer' data-aos="fade-up" data-aos-delay="20">
                         <Link href="https://rhorheeymarh.hashnode.dev/inside-the-ethereum-virtual-machine-how-solidity-data-structures-are-stored-in-the-evm"><p className='text-medium text-[#6AECD9] border-b-2 border-[#696E71]'>Read More</p></Link>
-                        <Image src="/readmore.svg" alt="Arrow icon" width={24} height={16} />
+                        <Image src="/readmore.svg" alt="Arrow icon" width={20} height={16} />
                     </div>
                 </div>
             </div>
@@ -173,7 +173,7 @@ export default function Blogs() {
                     <p className='text-base text-[#8b9093] mb-8' data-aos="fade-up" data-aos-delay="10">NFTs (Non-Fungible Tokens) are one of the amazing innovations of the blockchain, and its applications has continued to expand into many industries like real estate, ticketing, music, art, decentralized identity, gaming, etc. The birth of NFTs came through the ERC-721 standard, which was inspired by the popular ERC-20 standard, a standard for fungible tokens widely used in the crypto world.</p>
                     <div className='flex items-center justify-start cursor-pointer' data-aos="fade-up" data-aos-delay="20">
                         <Link href="https://medium.com/@roheemahabo/erc-721-and-the-nft-revolution-a-deep-dive-into-the-standard-powering-non-fungible-tokens-3bf8a512143c"><p className='text-medium text-[#6AECD9] border-b-2 border-[#696E71]'>Read More</p></Link>
-                        <Image src="/readmore.svg" alt="Arrow icon" width={24} height={16} />
+                        <Image src="/readmore.svg" alt="Arrow icon" width={20} height={16} />
                     </div>
                 </div>
             </div>
@@ -188,7 +188,7 @@ export default function Blogs() {
                     <p>View on Hashnode</p>
                 </button>
             </Link>
-            <Link href="https://rhorheeymarh.hashnode.dev/" target="_blank" rel="noopener noreferrer">
+            <Link href="https://medium.com/@roheemahabo" target="_blank" rel="noopener noreferrer">
                 <button
                     className='flex items-center justify-between gap-4 border border-[#6ff6d7] py-4 px-8 text-[#6ff6d7] rounded-full font-medium mt-14 transition-transform transform hover:scale-105'
                     type="button"
