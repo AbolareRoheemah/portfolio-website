@@ -29,7 +29,7 @@ export default function Projects() {
               <div
                 className="w-full h-[200px] md:h-[250px] rounded-tl-[100px] rounded-br-[100px] opacity-80 group-hover:opacity-100 bg-cover bg-center bg-no-repeat border-2 border-[#6EF4E6] hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer"
                 style={{
-                  backgroundImage: "url('/portfolio-sc.png')",
+                  backgroundImage: "url('/vizientCoop.png')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
@@ -42,7 +42,7 @@ export default function Projects() {
                 </p>
                 <p className="text-left">
                   <span className="text-[#6df2db] text-[16px]">
-                    My portfolio
+                    Vizient Coop
                   </span>{" "}
                   - Assets management and investment platform
                 </p>
@@ -186,20 +186,20 @@ export default function Projects() {
           </div>
         </div>
       </Link>
-      <Link data-aos="flip-left" href="https://vizientcoop.com/">
+      <Link data-aos="flip-left" href="https://github.com/AbolareRoheemah/NFT-Marketplace">
         <div className="relative group">
           <div
-            className="absolute top-0 left-0 w-[95%] h-full bg-[#9BF9F3] rounded-tl-[100px] rounded-br-[100px] -z-10 transform 
+            className="absolute top-0 left-0 w-[95%] h-full bg-[#9BF9F3] rounded-tl-[100px] rounded-br-[100px] -z-10 transform
                         -translate-x-[4px] -translate-y-[4px]"
           ></div>
           <div className="leaf-shaped min-h-[60vh] pt-8 pb-12 px-4 md:px-6 border-2 flex flex-col items-left justify-start bg-[#0D1117] rounded-tl-[100px] rounded-br-[100px] relative z-10 w-[95%] md:w-[360px]">
             <div className="flex flex-col items-center justify-start">
               <div
-                className="w-full h-[200px] md:h-[250px] rounded-tl-[100px] rounded-br-[100px] opacity-80 group-hover:opacity-100 
-                                bg-cover bg-center bg-no-repeat border-2 border-[#6EF4E6] hover:scale-105 transition-transform duration-300 ease-in-out 
+                className="w-full h-[200px] md:h-[250px] rounded-tl-[100px] rounded-br-[100px] opacity-80 group-hover:opacity-100
+                                bg-cover bg-center bg-no-repeat border-2 border-[#6EF4E6] hover:scale-105 transition-transform duration-300 ease-in-out
                                 cursor-pointer"
                 style={{
-                  backgroundImage: "url('/vizientCoop.png')",
+                  backgroundImage: "url('/nftimage.webp')",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
@@ -212,14 +212,14 @@ export default function Projects() {
                 </p>
                 <p className="text-left">
                   <span className="text-[#6df2db] text-[16px]">
-                    Vizient Coop
+                    NFT Marketplace
                   </span>{" "}
-                  - Assets management and investment platform
+                  - Buy, sell, and trade NFTs on blockchain
                 </p>
               </div>
               <div className="flex items-start justify-start gap-4 mb-4">
                 <img src="/link.svg" alt="" width={24} height={24} />
-                https://vizientcoop.com
+                github.com/AbolareRoheemah
               </div>
             </div>
           </div>

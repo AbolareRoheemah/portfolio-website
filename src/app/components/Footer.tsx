@@ -16,7 +16,7 @@ export default function Footer() {
             <Link href="https://github.com/AbolareRoheemah"><GitHub className='text-[#6AECD9] w-8' /></Link>
         </div>
         <div className='text-center md:text-right mt-4 md:mt-0'>
-            <p className='text-[16px] text-[#a9acae]'>Developed by <span className='text-[#2f7267]'>AbolareRoheemah</span></p>
+            <p className='text-[16px] text-[#a9acae]'>Developed by <a href='https://github.com/AbolareRoheemah' className='text-[#2f7267]'>AbolareRoheemah</a></p>
         </div>
     </footer>
   )

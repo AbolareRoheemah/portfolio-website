@@ -2,6 +2,7 @@
 import React from 'react'
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 export default function Blogs() {
     const router = useRouter();
 
@@ -21,29 +22,42 @@ export default function Blogs() {
         </div>
         <div className='flex flex-col items-center justify-start gap-2 text-center relative z-10 w-full'>
             <div className="relative inline-block">
-              <p className='text-[34px] md:text-[46px] font-medium text-[#6df2db]' data-aos="fade-up">Blogs</p>
+              <p className='text-[34px] md:text-[46px] font-medium text-[#6df2db]' data-aos="fade-up">Latest Articles</p>
               <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#6df2db] rounded-full">
                 <div className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1/2 w-1 h-1 bg-[#6df2db] rounded-full"></div>
                 <div className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-1/2 w-1 h-1 bg-[#6df2db] rounded-full"></div>
               </div>
             </div>
-            <p className='text-[16px] text-[#a9acae]' data-aos="fade-up">Here are some of the articles I have written over the years.</p>
+            <p className='text-[16px] text-[#a9acae]' data-aos="fade-up">Here are some of the recent articles I have written.</p>
             <div className='flex flex-col md:flex-row items-start justify-start gap-10 border-y-2 border-[#696E71] py-10 mt-10'>
                 <div>
-                    <img src="/erc20pic.jpg" alt="" className='min-w-[20vw] md:w-[25vw] md:h-[35vh] w-full h-full rounded-md' data-aos="flip-up" />
+                    <Image src="/ecfe_img.jpg" alt="EigenCloud for Anyone article cover" width={400} height={300} className='min-w-[20vw] md:w-[25vw] md:h-[35vh] w-full h-full rounded-md object-cover' data-aos="flip-up" />
                 </div>
                 <div className='text-left'>
-                    <h3 className='text-[34px] text-[#6df2db] md:py-6' data-aos="fade-up">Understanding ERC20 tokens</h3>
-                    <p className='text-sm text-[#8b9093] mb-8' data-aos="fade-up" data-aos-delay="10">ERC-20 (Ethereum Request for Comments-20) is the name used in the Ethereum community to refer to a standard (set of rules and functions) that guides the creation of fungible tokens on the Ethereum blockchain. Fungible tokens are tokens that are identical and can be exchanged on a one-for-one basis. In this article, I will go through the different functions contained in an ERc20 token standard and how they are used...</p>
-                    <Link href="https://rhorheeymarh.hashnode.dev/unpacking-erc-20-tokens-understanding-their-functions-and-their-uses" className='flex items-center justify-start cursor-pointer' data-aos="fade-up" data-aos-delay="20">
+                    <h3 className='text-[34px] text-[#6df2db] md:py-6' data-aos="fade-up">EigenCloud for Anyone</h3>
+                    <p className='text-sm font-bold text-[#8b9093] mb-8' data-aos="fade-up" data-aos-delay="10">In this article, I will try to build explanations step-by-step, starting with the basics before moving to more complex aspects. I respect that everyone has different backgrounds and expertise levels; hence, the goal with this article is to meet people where they are and help them understand concepts in a way that makes sense to them. So whether you’re a complete beginner or just approaching the topic from a different angle, this article is for you. 🚀</p>
+                    <Link href="https://medium.com/@roheemahabo/eigencloud-for-anyone-6a84bada6f88" className='flex items-center justify-start cursor-pointer' data-aos="fade-up" data-aos-delay="20">
                         <p className='text-medium text-[#6AECD9] border-b-2 border-[#696E71]'>Read More</p>
-                        <img src="/readmore.svg" alt="" className='w-6 h-4' />
+                        <Image src="/readmore.svg" alt="Arrow icon" width={20} height={16} />
+                    </Link>
+                </div>
+            </div>
+            <div className='flex flex-col md:flex-row items-start justify-start gap-10 border-b-2 border-[#696E71] py-10'>
+                <div>
+                    <Image src="/tscgiwih_img.webp" alt="ERC-20 tokens article cover" width={400} height={300} className='min-w-[20vw] md:w-[25vw] md:h-[35vh] w-full h-full rounded-md object-cover' data-aos="flip-up" />
+                </div>
+                <div className='text-left'>
+                    <h3 className='text-[34px] text-[#6df2db] md:py-6' data-aos="fade-up">The Smart Contract Integration Guide I Wish I Had</h3>
+                    <p className='text-sm font-bold text-[#8b9093] mb-8' data-aos="fade-up" data-aos-delay="10">In this guide, I’ll walk you through how to integrate your Solidity smart contract with a Next.js frontend using Wagmi, a React library designed for smart contract interactions. I’ll keep the process as simple and straightforward as possible to make it easy to follow.</p>
+                    <Link href="https://medium.com/@roheemahabo/the-smart-contract-integration-guide-i-wish-i-had-f099b0989132" className='flex items-center justify-start cursor-pointer' data-aos="fade-up" data-aos-delay="20">
+                        <p className='text-medium text-[#6AECD9] border-b-2 border-[#696E71]'>Read More</p>
+                        <Image src="/readmore.svg" alt="Arrow icon" width={20} height={16} />
                     </Link>
                 </div>
             </div>
             <button className='flex items-center justify-between gap-4 bg-[#6ff6d7] py-4 px-8 text-[#000] rounded-full font-medium mt-14 transition-transform transform hover:scale-105' onClick={handleRoute} data-aos="fade-up" data-aos-delay="40">
                 <p>View More</p>
-                <img src="/view.svg" alt="" width={24} height={24} />
+                <Image src="/view.svg" alt="View more icon" width={24} height={24} />
             </button>
         </div>
 

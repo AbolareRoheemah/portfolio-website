@@ -4,7 +4,7 @@ import { MailOutlined, LocationOnOutlined } from '@mui/icons-material';
 import { TypeAnimation } from 'react-type-animation';
 import Link from 'next/link'
 
-const SKILLS = ['HTML/CSS', 'JS', 'REACT', 'NEXT', 'VUE', 'NUXT', 'SOLIDITY'];
+const SKILLS = ['Solidity', 'Rust', 'TS', 'JS', 'Python', 'React', 'Next', 'Vue', 'Nuxt', 'HTML', 'CSS'];
 const TYPING_SEQUENCE = [
     'Frontend Developer',
     1000,
@@ -14,22 +14,24 @@ const TYPING_SEQUENCE = [
     1000
 ];
 const STATS = [
-    { number: 4, text: 'Programming Languages' },
-    { number: 6, text: 'Development Tools' },
-    { number: 3, text: 'Years of Experience' }
+    { number: "7+", text: 'Programming Languages' },
+    { number: "15+", text: 'Projects Deployed' },
+    { number: "5+", text: 'Years of Experience' }
 ];
 
 export default function Jumbotron() {
     const renderSkillBadge = (skill: string) => (
-        <p key={skill} className='bg-[#9BF9F3] text-[#000] text-sm px-2 py-[1px] basis-2/12 rounded-full'>
+        <p key={skill} className='bg-[#9BF9F3] text-[#000] text-sm text-bold px-2 text-center py-[1px] basis-2/12 rounded-full'>
             {skill}
         </p>
     );
 
-    const renderStat = ({ number, text }: { number: number, text: string }) => (
-        <div key={text} className='flex items-center justify-start md:items-center md:justify-center gap-4 mt-8'>
-            <p className='text-[#6AECD9] text-[50px] font-medium'>{number}</p>
-            <p className='text-md font-bold text-[#9B9EA1]'>{text}</p>
+    const renderStat = ({ number, text }: { number: string, text: string }) => (
+        <div key={text} className="flex items-center mt-8">
+            <div className="w-[80px] flex-none flex justify-center">
+                <p className="text-[#6AECD9] text-[50px] font-medium">{number}</p>
+            </div>
+            <p className="text-md font-bold text-[#9B9EA1]">{text}</p>
         </div>
     );
 
@@ -51,7 +53,7 @@ export default function Jumbotron() {
                             <div className='mt-6 text-[#9B9EA1]'>
                                 <div className='flex items-center justify-start gap-4 mb-4'>
                                     <p><MailOutlined className='text-[#6AECD9]' /></p>
-                                    <span>abolareroheemah@gmail.com</span>
+                                    <span>roheemahabo@gmail.com</span>
                                 </div>
                                 <div className='flex items-center justify-start gap-4 mb-4'>
                                     <p><LocationOnOutlined className='text-[#6AECD9]' /></p>
@@ -66,7 +68,7 @@ export default function Jumbotron() {
                                 {SKILLS.map(renderSkillBadge)}
                             </div>
                             <a 
-                                href="https://docs.google.com/document/d/1iLtYWAaMytZ2K9NEQ3f8LVEUUOVBfcGFhkmYYE1tPdI/edit?usp=sharing" 
+                                href="https://drive.google.com/file/d/1omYJHqcrUFeuABwRuSuxfJvXW0TNj3_L/view?usp=drive_link" 
                                 download="Abolare_Roheemah_CV.pdf" 
                                 target="_blank" 
                                 rel="noopener noreferrer" 
@@ -103,11 +105,11 @@ export default function Jumbotron() {
                             <div className='flex items-center justify-start gap-4 mt-6'>
                                 <p className='text-[34px] text-[#6AECD9]'>Let&apos;s Talk</p>
                                 <Link href="#contact" className='bg-[#464647] w-8 h-8 flex items-center justify-center p-4 rounded-full text-[#6AECD9] cursor-pointer'>
-                                    <MailOutlined />
+                                    <MailOutlined className='w-5 h-5' />
                                 </Link>
                             </div>
                         </div>
-                        <div className='py-10 px-8 bg-[#1A1E23] rounded-lg md:rounded-full'>
+                        <div className='py-10 px-6 bg-[#1A1E23] rounded-lg md:rounded-full'>
                             {STATS.map(renderStat)}
                         </div>
                     </div>

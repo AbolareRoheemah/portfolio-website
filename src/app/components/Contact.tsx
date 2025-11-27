@@ -1,6 +1,8 @@
 'use client'
 import React, { useState, ChangeEvent, FormEvent } from 'react';
 import emailjs from '@emailjs/browser';
+import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Contact() {
     const [formData, setFormData] = useState({
@@ -8,6 +10,11 @@ export default function Contact() {
         email: '',
         message: ''
     });
+    const [errors, setErrors] = useState<{
+        name?: string;
+        email?: string;
+        message?: string;
+    }>({});
     const [status, setStatus] = useState<{
         type: 'success' | 'error' | null;
         message: string;
@@ -17,29 +24,66 @@ export default function Contact() {
     });
     const [isSubmitting, setIsSubmitting] = useState(false);
 
+    const validateForm = () => {
+        const newErrors: typeof errors = {};
+
+        if (!formData.name.trim()) {
+            newErrors.name = 'Name is required';
+        } else if (formData.name.trim().length < 2) {
+            newErrors.name = 'Name must be at least 2 characters';
+        }
+
+        if (!formData.email.trim()) {
+            newErrors.email = 'Email is required';
+        } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+            newErrors.email = 'Please enter a valid email address';
+        }
+
+        if (!formData.message.trim()) {
+            newErrors.message = 'Message is required';
+        } else if (formData.message.trim().length < 10) {
+            newErrors.message = 'Message must be at least 10 characters';
+        }
+
+        setErrors(newErrors);
+        return Object.keys(newErrors).length === 0;
+    };
+
     const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
         setFormData({
             ...formData,
             [name]: value
         });
+        // Clear error for this field when user starts typing
+        if (errors[name as keyof typeof errors]) {
+            setErrors({
+                ...errors,
+                [name]: undefined
+            });
+        }
     };
 
     const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+
+        if (!validateForm()) {
+            return;
+        }
+
         setIsSubmitting(true);
-        
+
         try {
             const result = await emailjs.send(
-                'service_kfkxu6d',  
-                'template_pir7d8o', 
+                process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+                process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
                 {
                     from_name: formData.name,
                     reply_to: formData.email,
                     message: formData.message,
-                    to_name: 'Roheemah', 
+                    to_name: 'Roheemah',
                 },
-                'w6_Kpn71xttBtPBQj'  
+                process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
             );
 
             if (result.text === 'OK') {
@@ -86,6 +130,29 @@ export default function Contact() {
                     </div>
                 </div>
                 <p className='text-[16px] text-[#a9acae]' data-aos="fade-up">Have an amazing project? Reach out, let&apos;s talk!</p>
+
+                {/* Social DM Alternatives */}
+                <div className='flex items-center justify-center gap-6 mt-6' data-aos="fade-up">
+                    <Link
+                        href="https://www.linkedin.com/in/abolareroheemah/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className='flex items-center gap-2 px-4 py-2 bg-[#0077B5] rounded-full hover:bg-[#006399] transition-colors'
+                    >
+                        <Image src="/linkedin.svg" alt="LinkedIn" width={20} height={20} />
+                        <span className='text-sm'>Message on LinkedIn</span>
+                    </Link>
+                    <Link
+                        href="https://x.com/Rhorheeymarh"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className='flex items-center gap-2 px-4 py-2 bg-[#1DA1F2] rounded-full hover:bg-[#1a8cd8] transition-colors'
+                    >
+                        <Image src="/x.svg" alt="Twitter/X" width={20} height={20} />
+                        <span className='text-sm'>DM on X</span>
+                    </Link>
+                </div>
+
                 <div className='flex flex-col items-center w-full'>
                     <div className='rounded-tl-[50px] rounded-br-[50px] border-2 border-[#6df2db] w-[max-content] py-2 px-8 mt-10 mb-8' data-aos="flip-up">
                         <h3 className='text-[24px] md:text-[40px] text-[#6df2db]'>Send Me A Message</h3>
@@ -104,39 +171,43 @@ export default function Contact() {
                         <div className='flex flex-col md:flex-row items-center justify-between md:gap-24 gap-8 w-full'>
                             <div className='flex flex-col w-full' data-aos="fade-up">
                                 <label htmlFor="name" className='text-left mb-4 text-[#2f7267]'>Your name*</label>
-                                <input 
-                                    type="text" 
-                                    name="name" 
-                                    placeholder='Enter your name' 
-                                    value={formData.name} 
-                                    onChange={handleChange} 
+                                <input
+                                    type="text"
+                                    name="name"
+                                    placeholder='Enter your name'
+                                    value={formData.name}
+                                    onChange={handleChange}
                                     required
-                                    className='border-b border-[#6df2db] bg-transparent focus:outline-none text-[#a9acae]'
+                                    className={`border-b ${errors.name ? 'border-red-500' : 'border-[#6df2db]'} bg-transparent focus:outline-none text-[#a9acae] pb-2`}
                                 />
+                                {errors.name && <span className='text-red-500 text-sm mt-2'>{errors.name}</span>}
                             </div>
                             <div className='flex flex-col w-full' data-aos="fade-up">
                                 <label htmlFor="email" className='text-left mb-4 text-[#2f7267]'>Your email*</label>
-                                <input 
-                                    type="email" 
-                                    name="email" 
-                                    placeholder='Enter your email' 
-                                    value={formData.email} 
-                                    onChange={handleChange} 
+                                <input
+                                    type="email"
+                                    name="email"
+                                    placeholder='Enter your email'
+                                    value={formData.email}
+                                    onChange={handleChange}
                                     required
-                                    className='border-b border-[#6df2db] bg-transparent focus:outline-none text-[#a9acae]'
+                                    className={`border-b ${errors.email ? 'border-red-500' : 'border-[#6df2db]'} bg-transparent focus:outline-none text-[#a9acae] pb-2`}
                                 />
+                                {errors.email && <span className='text-red-500 text-sm mt-2'>{errors.email}</span>}
                             </div>
                         </div>
                         <div className='flex flex-col w-full mt-10' data-aos="fade-up" data-aos-delay="20">
                             <label htmlFor="message" className='text-left mb-4 text-[#2f7267]'>Your message*</label>
-                            <textarea 
-                                name="message" 
-                                placeholder='Enter your message' 
-                                value={formData.message} 
-                                onChange={handleChange} 
+                            <textarea
+                                name="message"
+                                placeholder='Enter your message'
+                                value={formData.message}
+                                onChange={handleChange}
                                 required
-                                className='border-b border-[#6df2db] bg-transparent focus:outline-none text-[#a9acae]'
+                                rows={4}
+                                className={`border-b ${errors.message ? 'border-red-500' : 'border-[#6df2db]'} bg-transparent focus:outline-none text-[#a9acae] pb-2 resize-none`}
                             />
+                            {errors.message && <span className='text-red-500 text-sm mt-2'>{errors.message}</span>}
                         </div>
 
                         <div className='flex justify-center mt-14' data-aos="fade-up" data-aos-delay="40">

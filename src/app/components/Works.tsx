@@ -2,6 +2,7 @@
 import React from "react";
 import { WorkOutlineOutlined } from "@mui/icons-material";
 import Link from "next/link";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 export default function Works() {
@@ -56,7 +57,7 @@ export default function Works() {
                   </p>
                 </div>
                 <div className="flex items-start justify-start gap-4 mb-4">
-                  <img src="/link.svg" alt="" width={24} height={24} />
+                  <Image src="/link.svg" alt="External link icon" width={24} height={24} />
                   <Link href="https://vizientcoop.com/">
                     https://vizientcoop.com
                   </Link>
@@ -90,7 +91,7 @@ export default function Works() {
                   </p>
                 </div>
                 <div className="flex items-start justify-start gap-4 mb-4">
-                  <img src="/link.svg" alt="" width={24} height={24} />
+                  <Image src="/link.svg" alt="External link icon" width={24} height={24} />
                   <Link href="https://reablock.com/">https://reablock.com</Link>
                 </div>
               </div>
@@ -123,7 +124,7 @@ export default function Works() {
                   </p>
                 </div>
                 <div className="flex items-start justify-start gap-4 mb-4">
-                  <img src="/link.svg" alt="" width={24} height={24} />
+                  <Image src="/link.svg" alt="External link icon" width={24} height={24} />
                   <Link href="https://web3-learner.vercel.app/">
                     https://web3-learner.vercel.app
                   </Link>
@@ -139,7 +140,7 @@ export default function Works() {
           className="flex items-center justify-between gap-4 bg-[#6ff6d7] py-4 px-8 text-[#000] rounded-full font-medium mt-4 cursor-pointer transition-transform transform hover:scale-105" data-aos="fade-up"
         >
           <p>View More</p>
-          <img src="/view.svg" alt="" width={24} height={24} />
+          <Image src="/view.svg" alt="View more icon" width={24} height={24} />
         </button>
       </div>
     </div>

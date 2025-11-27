@@ -21,7 +21,10 @@ export default function About() {
                     <h5 data-aos="fade-up" data-aos-delay="10" className='text-[#6bf6fb] text-xl font-bold mb-2 ml-4'>Hello!</h5>
                     <p data-aos="fade-up" data-aos-delay="20" className='mt-4 text-[#979A9D] text-md font-bold ml-4'>Hello, I&apos;m Roheemah, a frontend developer with over three years of experience in building dynamic and engaging web applications. My expertise spans <span className='text-[#6bf6fb]'>HTML, CSS, Javascript, Typescript</span>, and popular JavaScript frameworks like <span className='text-[#6bf6fb]'>React, Next, Vue and Nuxt</span></p>
                     <p data-aos="fade-up" data-aos-delay="30" className='mt-4 text-[#979A9D] text-md font-bold ml-4'>
-                    In addition to frontend development, I am also a blockchain developer skilled in <span className='text-[#6bf6fb]'>Solidity</span>, creating secure and efficient <span className='text-[#6bf6fb]'>smart contracts</span> for various blockchain applications.
+                    In addition to frontend development, I am also a blockchain developer skilled in <span className='text-[#6bf6fb]'>Solidity and Rust</span>, creating secure and efficient <span className='text-[#6bf6fb]'>smart contracts</span> for various blockchain applications. I have competed in multiple hackathons, winning third place at AYA HQ, ICP Hub, and DappsOverDapps hackathons in 2024.
+                    </p>
+                    <p data-aos="fade-up" data-aos-delay="35" className='mt-4 text-[#979A9D] text-md font-bold ml-4'>
+                    My development philosophy centers on <span className='text-[#6bf6fb]'>building user-centric, scalable solutions</span> that solve real-world problems. I believe in writing clean, maintainable code and staying curious about emerging technologies, whether that&apos;s exploring new blockchain protocols or optimizing frontend performance.
                     </p>
                     <p data-aos="fade-up" data-aos-delay="40" className='mt-4 text-[#979A9D] text-md font-bold ml-4'>
                     As a technical and content writer, I enjoy breaking down complex concepts and communicating them effectively, helping myself and my readers gain deeper insights into technology.

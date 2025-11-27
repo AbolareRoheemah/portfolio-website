@@ -25,11 +25,12 @@ const Skills = () => {
                 <div className='flex flex-col items-center justify-center gap-2 bg-[#6df2db] border-l-4 border-l-[#00DC82] rounded-lg p-4 w-[300px]' data-aos="flip-right">
                     <p className='cursor-pointer'><PersonalVideo className='text-[#000]' /></p>
                     <h3 className='text-[#000]'>Blockchain Development</h3>
-                    <p className='text-[#6DA8A2]'>Solidity, Web3, Ethereum, ethers.js, Solidity</p>
+                    <p className='text-[#6DA8A2]'>Solidity, Rust, Web3, Ethereum, ethers.js</p>
                 </div>
             </div>
             <div className='flex items-center justify-center gap-4 flex-wrap mb-20'>
                 {[
+                    { name: 'Rust', color: '#CE422B', icon: './rust.svg' },
                     { name: 'Solidity', color: '#363636', icon: './solidity.svg' },
                     { name: 'HTML', color: '#e54f2d', icon: './html5.svg' },
                     { name: 'CSS', color: '#1e72b8', icon: './css3.svg' },
