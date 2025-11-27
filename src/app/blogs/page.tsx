@@ -4,10 +4,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import AOS from 'aos';
 import 'aos/dist/aos.css'
-import { useRouter } from 'next/navigation';
 
 export default function Blogs() {
-    const router = useRouter();
     useEffect(() => {
         const aosConfig = {
           duration: 1000,
