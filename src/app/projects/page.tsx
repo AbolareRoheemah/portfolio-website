@@ -21,6 +21,108 @@ export default function Projects() {
 
   const frontendProjects = (
     <div className="flex flex-col md:flex-row items-center justify-center gap-10 px-4 flex-wrap md:gap-20 mt-10 mb-14">
+      <Link data-aos="flip-left" href="https://peekly-dapp-frontend.vercel.app/">
+        <div className="relative group">
+          <div className="absolute top-0 left-0 w-[95%] h-full bg-[#9BF9F3] rounded-tl-[100px] rounded-br-[100px] -z-10 transform -translate-x-[4px] -translate-y-[4px]"></div>
+          <div className="leaf-shaped min-h-[60vh] pt-8 pb-12 px-4 md:px-6 border-2 flex flex-col items-left justify-start bg-[#0D1117] rounded-tl-[100px] rounded-br-[100px] relative z-10 w-[95%] md:w-[360px]">
+            <div className="flex flex-col items-center justify-start">
+              <div
+                className="w-full h-[200px] md:h-[250px] rounded-tl-[100px] rounded-br-[100px] opacity-80 group-hover:opacity-100 bg-cover bg-center bg-no-repeat border-2 border-[#6EF4E6] hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer"
+                style={{
+                  backgroundImage: "url('/peekly_screenshot.png')",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
+              ></div>
+            </div>
+            <div className="mt-6 text-[#9B9EA1]">
+              <div className="flex items-start justify-start mb-4 gap-2">
+                <p>
+                  <WorkOutlineOutlined className="text-[#6AECD9]" />
+                </p>
+                <p className="text-left">
+                  <span className="text-[#6df2db] text-[16px]">
+                    Peekly
+                  </span>{" "}
+                  - Web3 content monetization platform
+                </p>
+              </div>
+              <div className="flex items-center justify-start gap-2 mb-4">
+                <img src="/link.svg" alt="" width={24} height={24} className="inline-block align-middle" />
+                <span className="break-all text-[15px] leading-tight">https://peekly-dapp-frontend.vercel.app/</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Link>
+      <Link data-aos="flip-left" href="https://fiidbak-app.vercel.app/">
+        <div className="relative group">
+          <div className="absolute top-0 left-0 w-[95%] h-full bg-[#9BF9F3] rounded-tl-[100px] rounded-br-[100px] -z-10 transform -translate-x-[4px] -translate-y-[4px]"></div>
+          <div className="leaf-shaped min-h-[60vh] pt-8 pb-12 px-4 md:px-6 border-2 flex flex-col items-left justify-start bg-[#0D1117] rounded-tl-[100px] rounded-br-[100px] relative z-10 w-[95%] md:w-[360px]">
+            <div className="flex flex-col items-center justify-start">
+              <div
+                className="w-full h-[200px] md:h-[250px] rounded-tl-[100px] rounded-br-[100px] opacity-80 group-hover:opacity-100 bg-cover bg-center bg-no-repeat border-2 border-[#6EF4E6] hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer"
+                style={{
+                  backgroundImage: "url('/fiidbak_screenshot.png')",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
+              ></div>
+            </div>
+            <div className="mt-6 text-[#9B9EA1]">
+              <div className="flex items-start justify-start mb-4 gap-2">
+                <p>
+                  <WorkOutlineOutlined className="text-[#6AECD9]" />
+                </p>
+                <p className="text-left">
+                  <span className="text-[#6df2db] text-[16px]">
+                    Fiidbak
+                  </span>{" "}
+                  - A web3 platform for collecting and managing product feedback
+                </p>
+              </div>
+              <div className="flex items-start justify-start gap-2 mb-4">
+                <img src="/link.svg" alt="" width={24} height={24} />
+                https://fiidbak-app.vercel.app/
+              </div>
+            </div>
+          </div>
+        </div>
+      </Link>
+      <Link data-aos="flip-left" href="https://nex-murex.vercel.app/">
+        <div className="relative group">
+          <div className="absolute top-0 left-0 w-[95%] h-full bg-[#9BF9F3] rounded-tl-[100px] rounded-br-[100px] -z-10 transform -translate-x-[4px] -translate-y-[4px]"></div>
+          <div className="leaf-shaped min-h-[60vh] pt-8 pb-12 px-4 md:px-6 border-2 flex flex-col items-left justify-start bg-[#0D1117] rounded-tl-[100px] rounded-br-[100px] relative z-10 w-[95%] md:w-[360px]">
+            <div className="flex flex-col items-center justify-start">
+              <div
+                className="w-full h-[200px] md:h-[250px] rounded-tl-[100px] rounded-br-[100px] opacity-80 group-hover:opacity-100 bg-cover bg-center bg-no-repeat border-2 border-[#6EF4E6] hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer"
+                style={{
+                  backgroundImage: "url('/nex_img.png')",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
+              ></div>
+            </div>
+            <div className="mt-6 text-[#9B9EA1]">
+              <div className="flex items-start justify-start mb-4 gap-2">
+                <p>
+                  <WorkOutlineOutlined className="text-[#6AECD9]" />
+                </p>
+                <p className="text-left">
+                  <span className="text-[#6df2db] text-[16px]">
+                    Nex
+                  </span>{" "}
+                  - Decentralized event ticketing platform
+                </p>
+              </div>
+              <div className="flex items-start justify-start gap-2 mb-4">
+                <img src="/link.svg" alt="" width={24} height={24} />
+                https://nex-murex.vercel.app/
+              </div>
+            </div>
+          </div>
+        </div>
+      </Link>
       <Link data-aos="flip-left" href="https://vizientcoop.com/">
         <div className="relative group">
           <div className="absolute top-0 left-0 w-[95%] h-full bg-[#9BF9F3] rounded-tl-[100px] rounded-br-[100px] -z-10 transform -translate-x-[4px] -translate-y-[4px]"></div>
@@ -47,7 +149,7 @@ export default function Projects() {
                   - Assets management and investment platform
                 </p>
               </div>
-              <div className="flex items-start justify-start gap-4 mb-4">
+              <div className="flex items-start justify-start gap-2 mb-4">
                 <img src="/link.svg" alt="" width={24} height={24} />
                 https://vizientcoop.com
               </div>
@@ -79,7 +181,7 @@ export default function Projects() {
                   Real estate management website
                 </p>
               </div>
-              <div className="flex items-start justify-start gap-4 mb-4">
+              <div className="flex items-start justify-start gap-2 mb-4">
                 <img src="/link.svg" alt="" width={24} height={24} />
                 https://reablock.com
               </div>
@@ -114,7 +216,7 @@ export default function Projects() {
                   languages
                 </p>
               </div>
-              <div className="flex items-start justify-start gap-4 mb-4">
+              <div className="flex items-start justify-start gap-2 mb-4">
                 <img src="/link.svg" alt="" width={24} height={24} />
                 https://web3-learner.vercel.app
               </div>
@@ -146,7 +248,7 @@ export default function Projects() {
                   - A word management application
                 </p>
               </div>
-              <div className="flex items-start justify-start gap-4 mb-4">
+              <div className="flex items-start justify-start gap-2 mb-4">
                 <img src="/link.svg" alt="" width={24} height={24} />
                 https://smart-word-web.vercel.app
               </div>
@@ -178,48 +280,9 @@ export default function Projects() {
                   decentralized voting platform
                 </p>
               </div>
-              <div className="flex items-start justify-start gap-4 mb-4">
+              <div className="flex items-start justify-start gap-2 mb-4">
                 <img src="/link.svg" alt="" width={24} height={24} />
                 https://e-volt-drl8.vercel.app
-              </div>
-            </div>
-          </div>
-        </div>
-      </Link>
-      <Link data-aos="flip-left" href="https://github.com/AbolareRoheemah/NFT-Marketplace">
-        <div className="relative group">
-          <div
-            className="absolute top-0 left-0 w-[95%] h-full bg-[#9BF9F3] rounded-tl-[100px] rounded-br-[100px] -z-10 transform
-                        -translate-x-[4px] -translate-y-[4px]"
-          ></div>
-          <div className="leaf-shaped min-h-[60vh] pt-8 pb-12 px-4 md:px-6 border-2 flex flex-col items-left justify-start bg-[#0D1117] rounded-tl-[100px] rounded-br-[100px] relative z-10 w-[95%] md:w-[360px]">
-            <div className="flex flex-col items-center justify-start">
-              <div
-                className="w-full h-[200px] md:h-[250px] rounded-tl-[100px] rounded-br-[100px] opacity-80 group-hover:opacity-100
-                                bg-cover bg-center bg-no-repeat border-2 border-[#6EF4E6] hover:scale-105 transition-transform duration-300 ease-in-out
-                                cursor-pointer"
-                style={{
-                  backgroundImage: "url('/nftimage.webp')",
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                }}
-              ></div>
-            </div>
-            <div className="mt-6 text-[#9B9EA1]">
-              <div className="flex items-start justify-start mb-4 gap-2">
-                <p>
-                  <WorkOutlineOutlined className="text-[#6AECD9]" />
-                </p>
-                <p className="text-left">
-                  <span className="text-[#6df2db] text-[16px]">
-                    NFT Marketplace
-                  </span>{" "}
-                  - Buy, sell, and trade NFTs on blockchain
-                </p>
-              </div>
-              <div className="flex items-start justify-start gap-4 mb-4">
-                <img src="/link.svg" alt="" width={24} height={24} />
-                github.com/AbolareRoheemah
               </div>
             </div>
           </div>
@@ -254,7 +317,7 @@ export default function Projects() {
                   platform to learn non-technical web3 technologies and skills
                 </p>
               </div>
-              <div className="flex items-start justify-start gap-4 mb-4">
+              <div className="flex items-start justify-start gap-2 mb-4">
                 <img src="/link.svg" alt="" width={24} height={24} />
                 https://goshen.vercel.app
               </div>
