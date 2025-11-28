@@ -38,7 +38,7 @@ export default function Works() {
                 <div
                   className="w-full h-[200px] md:h-[250px] rounded-tl-[100px] rounded-br-[100px] bg-cover bg-center bg-no-repeat border-2 border-[#6EF4E6]"
                   style={{
-                    backgroundImage: "url('/vizientCoop.png')",
+                    backgroundImage: "url('/peekly_screenshot.png')",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}
@@ -51,16 +51,48 @@ export default function Works() {
                   </p>
                   <p className="text-left">
                     <span className="text-[#6df2db] text-[16px]">
-                      Vizient Coop
+                      Peekly
                     </span>{" "}
-                    - Assets management and investment platform
+                    - Web3 content monetization platform
                   </p>
                 </div>
-                <div className="flex items-start justify-start gap-4 mb-4">
+                <div className="flex items-center justify-start gap-2 mb-4">
                   <Image src="/link.svg" alt="External link icon" width={24} height={24} />
-                  <Link href="https://vizientcoop.com/">
-                    https://vizientcoop.com
+                  <Link href="https://peekly-dapp-frontend.vercel.app//">
+                    https://peekly-dapp-frontend.vercel.app/
                   </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="relative" data-aos="flip-left">
+            <div className="absolute top-0 left-0 w-full h-full min-h-[60vh] bg-[#9BF9F3] rounded-tl-[100px] rounded-br-[100px] -z-10 transform -translate-x-[4px] -translate-y-[4px]"></div>
+            <div className="leaf-shaped py-8 px-4 md:px-10 border-2 flex flex-col items-left justify-start bg-[#0D1117] rounded-tl-[100px] rounded-br-[100px] relative z-10 w-full md:w-[400px] min-h-[60vh]">
+              <div className="flex flex-col items-center justify-start">
+                <div
+                  className="w-full h-[200px] md:h-[250px] rounded-tl-[100px] rounded-br-[100px] bg-cover bg-center bg-no-repeat border-2 border-[#6EF4E6]"
+                  style={{
+                    backgroundImage: "url('/nex_img.png')",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}
+                ></div>
+              </div>
+              <div className="mt-6 text-[#9B9EA1]">
+                <div className="flex items-start justify-start mb-4 gap-2">
+                  <p>
+                    <WorkOutlineOutlined className="text-[#6AECD9]" />
+                  </p>
+                  <p className="text-left">
+                    <span className="text-[#6df2db] text-[16px]">
+                      Nex
+                    </span>{" "}
+                    - Decentralized event ticketing platform
+                  </p>
+                </div>
+                <div className="flex items-start justify-start gap-2 mb-4">
+                  <Image src="/link.svg" alt="External link icon" width={24} height={24} />
+                  <Link href="https://nex-murex.vercel.app/">https://nex-murex.vercel.app</Link>
                 </div>
               </div>
             </div>
@@ -90,44 +122,9 @@ export default function Works() {
                     - Real estate management website
                   </p>
                 </div>
-                <div className="flex items-start justify-start gap-4 mb-4">
+                <div className="flex items-start justify-start gap-2 mb-4">
                   <Image src="/link.svg" alt="External link icon" width={24} height={24} />
                   <Link href="https://reablock.com/">https://reablock.com</Link>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="relative" data-aos="flip-left">
-            <div className="absolute top-0 left-0 w-full h-full min-h-[60vh] bg-[#9BF9F3] rounded-tl-[100px] rounded-br-[100px] -z-10 transform -translate-x-[4px] -translate-y-[4px]"></div>
-            <div className="leaf-shaped py-8 px-4 md:px-10 border-2 flex flex-col items-left justify-start bg-[#0D1117] rounded-tl-[100px] rounded-br-[100px] relative z-10 w-full md:w-[400px] min-h-[60vh]">
-              <div className="flex flex-col items-center justify-start">
-                <div
-                  className="w-full h-[200px] md:h-[250px] rounded-tl-[100px] rounded-br-[100px] bg-cover bg-center bg-no-repeat border-2 border-[#6EF4E6]"
-                  style={{
-                    backgroundImage: "url('/web3L.png')",
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                  }}
-                ></div>
-              </div>
-              <div className="mt-6 text-[#9B9EA1]">
-                <div className="flex items-start justify-start mb-4 w-full  gap-2">
-                  <p>
-                    <WorkOutlineOutlined className="text-[#6AECD9]" />
-                  </p>
-                  <p className="text-left">
-                    <span className="text-[#6df2db] text-[16px]">
-                      Web3Learner
-                    </span>{" "}
-                    - The UI of a platform to learn web3 technologies and
-                    languages
-                  </p>
-                </div>
-                <div className="flex items-start justify-start gap-4 mb-4">
-                  <Image src="/link.svg" alt="External link icon" width={24} height={24} />
-                  <Link href="https://web3-learner.vercel.app/">
-                    https://web3-learner.vercel.app
-                  </Link>
                 </div>
               </div>
             </div>
